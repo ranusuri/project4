@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>House Hunters - Tableau</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">House Hunters</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="methods.html">Methods and Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ml.html">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tab.html">Tableau</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contianer">
+        <div class="jumbotron">
+            <h1 class="display-4">Tableau Analysis</h1>
+            <p class="lead">The data was modeled and presented using a tableau workbook. The following visualizations
+                confirm the
+                weak, but present correlation between home value and population. And presents the top cities and their
+                corresponding days on market and home value.</p>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="w-75 p-3" style="background-color: #eee;">
+            <div class='tableauPlaceholder' id='viz1653754937059' style='position: relative'><noscript><a href='#'><img
+                            alt='Home Value vs Population '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project4InputDataAnalysis&#47;Homevaluevspopulation&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Project4InputDataAnalysis&#47;Homevaluevspopulation' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project4InputDataAnalysis&#47;Homevaluevspopulation&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object></div>
+            <script
+                type='text/javascript'>                    var divElement = document.getElementById('viz1653754937059'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container content">
+        <div class="jumbotron">
+            <h1>Top 10 Cities and Days on Market</h1>
+            <div class="row">
+                <div class="col-8">
+                    <img src="../Images/TabDays.png" width="100%" alt="..."></a>
+                </div>
+                <div class="col-4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>The visual depicts the regions with the highest days on market. It should be taken into
+                        consideration that amnogst the top ten cities, six of them are in the state of New York. Not
+                        shown here, the least number of days on market being primarily from the state of Washington
+                        in cities such as Olympia, Bremerton, Mount Vernon, and Bellingham.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container content">
+        <div class="jumbotron">
+            <h1>Top 10 Cities and Home Values</h1>
+            <div class="row">
+                <div class="col-4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>The visual depicts the cities with the highest home values. Amongst the top ten cities with the highest home values, eight of the cities are in the state of California. Not pictured here, the state of Oklahoma has some cities ranking with the lowest home values in Ponca City, Muskogee, and McAlester. These cities in Oklahoma all have populations of less than 37,000.   </p>
+                </div>
+                <div class="col-8">
+                    <img src="../Images/TabHomeValues.png" width="100%" alt="..."></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

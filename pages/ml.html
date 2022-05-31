@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>House Hunters - Machine Learning</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">House Hunters</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="methods.html">Methods and Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ml.html">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tab.html">Tableau</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contianer">
+        <div class="jumbotron">
+            <h1 class="display-4">Machine Learning</h1>
+            <p class="lead">Our goal was to predict population size using a machine learning model taking in various housing market criteria.</p>
+        </div>
+    </div>
+    <div class="contianer">
+        <div class="card border-primary mb-3">
+            <div class="card-body">
+              <h1 class="card-title">Logistic Regression</h1>
+                <p class="lead">We attempted to predict population of an area based on the combination of days on market and home value for the homes sold in the area. We first ran a logistic regression since we predicted the data would be fairly linear or mathematically related. Unfortunately, this only returned a training data score of .3% and testing data score of 0%.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contianer">
+        <div class="card border-primary mb-3">
+            <div class="card-body">
+              <h1 class="card-title">Neural Network Analysis</h1>
+                <p class="lead">Next, we tried neural network analysis, hoping to uncover hidden patterns and correlations that a logistic regression wouldn’t catch. Unfortunately, this also resulted in an accuracy of 0.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contianer">
+        <div class="card border-primary mb-3">
+            <div class="card-body">
+              <h1 class="card-title">Optimization</h1>
+                <p class="lead">Our EDA showed a very weak correlation between Days on Market and Population, so we decided to remove the days on market column from the features of the model. This improved the training data score to 4.8%, but the testing data score and neural network scores remained at 0, even with an additional hidden layer in the neural network. Finally, we scaled the data for the logistic regression model, and the training data score returned to .3% with a testing score still at 0.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

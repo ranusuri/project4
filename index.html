@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>House Hunters</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">House Hunters</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/methods.html">Methods and Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ml.html">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/tab.html">Tableau</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="contianer">
+        <div class="jumbotron">
+            <h1 class="display-4">Introduction</h1>
+            <p class="lead">Our data pulls from Zillow to provide the days on market and home value assessments and Census population data from 2020. The following visualizations were devloped using Plotly and tells a house hunting story. </p>
+        </div>
+    </div>
+    <br>
+    <div class="container content">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-8">
+                    <img src="Images/PopHome.png" width="100%" alt="..."></a>
+                </div>
+                <div class="col-4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>The data depicts a positibe relationship between home value and population. The visualization indicates that there is not a relatively direct correlation with these two variables with evidence from an r-value of 0.256 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container content">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>The data depicts a negative relationship between days on market and population. The visualization indicates that there is not a strong correlation with these two variables with evidence from an r-value of -0.0273 </p>
+                </div>
+                <div class="col-8">
+                    <img src="Images/PopDays.png" width="100%" alt="..."></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container content">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-8">
+                    <img src="Images/DaysHome.png" width="100%" alt="..."></a>
+                </div>
+                <div class="col-4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>                    
+                    <br>
+                    <br>
+                    <p>The data depicts a negative relationship between home value and days on market. The visualization indicates that there is not a strong correlation with these two variables with evidence from an r-value of -0.142 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
